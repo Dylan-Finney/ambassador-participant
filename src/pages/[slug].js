@@ -216,14 +216,16 @@ export default function Home() {
             <Flex
               flexDirection={"column"}
               alignItems={"center"}
+              alignSelf={"center"}
               mt={"auto"}
               mb={"auto"}
               gap={"40px"}
+              maxWidth={"700px"}
             >
               <Text textAlign={"center"} fontSize={"32px"} fontWeight={600}>
                 Please verify your email to continue
               </Text>
-              <Text textAlign={"center"}>
+              <Text color={"#7A7578"} textAlign={"center"}>
                 We have sent an email to {censoredEmail(user.email)} to verify
                 your email address. the link in the email will expire in 24
                 hours. Please check your spam folder too.
